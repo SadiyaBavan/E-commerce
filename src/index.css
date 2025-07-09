@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@font-face {
+  font-family: 'jost';
+  src: url('../public/fonts/Jost/Jost-VariableFont_wght.ttf');
+  font-weight: 100b, 900;
+}
+
+@font-face {
+  font-family: 'marcellus';
+  src: url('../public/fonts/Marcellus/Marcellus-Regular.ttf');
+  font-weight: 100, 900;
+}
+
+@theme {
+    --color-black: #000000;
+    --color-gray-dark: #666666;
+    --color-gray: #D2D2D2;
+    --color-wihte: #FFFFFF;
+    --color-orange: #DA7B67;
+    --color-pink: #E78A8A;
+    --color-peach:#F3E9E9;
+    --color-danger: #FF1A1A;
+    --color-green: #16985E;
+    --color-red: #FFA048;
+}
+body{
+  font-family: 'jost', sans-serif;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Marcellus';
+  font-weight: 400;
+}
+
+
+
+
+
