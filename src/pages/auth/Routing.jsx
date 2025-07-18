@@ -1,30 +1,41 @@
 import { createBrowserRouter } from "react-router-dom"
 import Layouts from "../auth/Layouts"
 import { Forgotpass, Login, Register, Resetpass } from "./block"
+import Productcart from "../auth/product/listing/common/Productcart"
 
-const Routing = createBrowserRouter ([
+const Routing = createBrowserRouter([
     {
-        path:'/auth',
+        path: '/auth',
         element: <Layouts />,
         children: [
             {
                 path: 'login',
-                element: <Login/>
+                element: <Login />
             },
             {
                 path: 'register',
-                element: <Register/>
+                element: <Register />
             },
             {
                 path: 'resetpass',
-                element: <Resetpass/>
+                element: <Resetpass />
             },
             {
                 path: 'forgotpass',
-                element: <Forgotpass/>
+                element: <Forgotpass />
             }
         ]
+
+
+    },
+    {
+        path: 'product/listing',
+        element: <Productcart />,
+
     }
+
+
+
 ])
 
 
